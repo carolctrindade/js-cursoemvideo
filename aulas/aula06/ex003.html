@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body{
+            background-color: rgba(4, 117, 247, 0.582);
+            color: #ffffff;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: rgba(255, 217, 0, 0.856);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        var n1 = parseFloat(window.prompt("Digite um número: "))//também pode ser usado somente o "Number" (em alguns casos)
+        var n2 = parseFloat(window.prompt("Digite outro número: ")) //pode também ser uma usada uma variação com o "number" na frente: Number.parseFloat() ou Int
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) //para converter uma variável em string, pode-se se usar o: n.toString() ou String(n)
+    </script>
+</body>
+</html>

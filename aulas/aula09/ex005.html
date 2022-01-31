@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pimeiros passos com DOM</title>
+    <style>
+        body{
+            background: rgb(0, 119, 255);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>  
+    <div id="msg">Clique em mim!</div>
+    <script>
+        /*var p1 = window.document.getElementsByTagName("p")[0] //esse [0] indica o número do elemento que se quer pegar. Mesma ideia dos índices nos vetores que o primeiro elemento é índice 0. - Esse colchetes será usado sempre que o "Elements" estiver no plural.
+        //window.document.write(p1.innerText)
+        //p1.style.color = "blue"
+        var d = window.document.getElementById("msg")
+        d.style.background = "green"
+        d.innerText = "Estou aguardando..." //também pode ser escrito como: window.document.getElementById("msg").innerText = "Estou aguardando..."*/
+
+        //usando o Seletor (querySelector)
+        var d = window.document.querySelector("div#msg")
+    </script>
+</body>
+</html>

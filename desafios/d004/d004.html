@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula Troco</title>
+</head>
+<body>
+    <h1>Calculando o Troco</h1>
+    <button onclick="comprar()">Comprar produto</button>
+    <script>
+        function comprar(){
+            var produto = prompt("Qual produto você está comprando?")
+            var preço = parseFloat(prompt(`Quanto custa o(a) ${produto} que você está comprando?`))
+            var valorPago = parseFloat(prompt(`Qual foi o valor que você deu para pagar o(a) ${produto}`))
+            var troco = valorPago - preço
+            alert(`Você comprou ${produto} que custou ${preço.toLocaleString("pt-BR", {style: "currency", currency:"BRL"})}. Deu ${valorPago.toLocaleString("pt-BR", {style: "currency", currency:"BRL"})} em dinheiro e vai receber ${troco.toLocaleString("pt-BR", {style: "currency", currency:"BRL"})} de troco. Volte sempre!`)
+            //o resultado final não está ficando igua ao do desafio pq as duas últimas frases não estão tendo as quebras de linhas. NÃO CONSEGUI FAZER!
+        }
+    </script>
+</body>
+</html>
