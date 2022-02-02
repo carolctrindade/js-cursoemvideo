@@ -27,10 +27,15 @@
     <h1>Conversor de Medidas</h1>
     <button onclick="converter()">Converter</button>
     <p>Clique no botão acima para iniciar.</p>
+    <div class="converções">
+
+    </div>
     <script>
         function converter(){
             var distânciaM = parseFloat(prompt("Digite uma distância em metros (m)"))
-            document.write(`<strong>A distância de ${distânciaM} metros, corresponde a...</strong>`)
+            var distânciaKm = document.getElementsByClassName("div.converções")
+            var distânciaKm = distânciaM / 100
+            distânciaKm.innerHTML = `<strong>A distância de ${distânciaKm} metros, corresponde a...</strong>`
         }
     </script>
 </body>
