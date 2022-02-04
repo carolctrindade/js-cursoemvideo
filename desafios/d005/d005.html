@@ -33,9 +33,9 @@
     <script>
         function converter(){
             var distânciaM = parseFloat(prompt("Digite uma distância em metros (m)"))
-            var distânciaKm = document.getElementsByClassName("div.converções")
-            var distânciaKm = distânciaM / 100
-            distânciaKm.innerHTML = `<strong>A distância de ${distânciaKm} metros, corresponde a...</strong>`
+            distânciaM.toFixed(3)
+            var distâncias = document.getElementById("converções")
+            distâncias.innerHTML = `<p><strong>A distância de ${distânciaM} metro(s), corresponde a...</strong>`
         }
     </script>
 </body>
