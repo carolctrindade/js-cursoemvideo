@@ -27,15 +27,23 @@
     <h1>Conversor de Medidas</h1>
     <button onclick="converter()">Converter</button>
     <p>Clique no botão acima para iniciar.</p>
-    <div class="converções">
+    <div id="converções">
 
     </div>
     <script>
         function converter(){
             var distânciaM = parseFloat(prompt("Digite uma distância em metros (m)"))
             distânciaM.toFixed(3)
+            var distânciaKm = parseFloat(distânciaM/1000)
+            var distânciamm = distânciaM*1000
             var distâncias = document.getElementById("converções")
             distâncias.innerHTML = `<p><strong>A distância de ${distânciaM} metro(s), corresponde a...</strong>`
+            distâncias.innerHTML += `<p>${distânciaKm} quilômetros (Km)`
+            distâncias.innerHTML += `<p>${distânciaM/100} hectômetros (Hm)`
+            distâncias.innerHTML += `<p>${distânciaM/10} decâmetros (Dam)`
+            distâncias.innerHTML += `<p>${distânciaM*10} decímetros (dm)`
+            distâncias.innerHTML += `<p>${distânciaM*100} centímetros (cm)`
+            distâncias.innerHTML += `<p>${distânciamm} milímetros (mm)`
         }
     </script>
 </body>
