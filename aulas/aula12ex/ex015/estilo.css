@@ -14,17 +14,8 @@ section{
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.589);
 }
-div{
-    text-align: center;
-    padding: 10px;
-}
 footer{
     color: white;
     text-align: center;
     font-style: italic;
-}
-img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
 }
